@@ -39,12 +39,14 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6 row align-items-center">
                     <h1>Engineering Management</h1>
-                    <p></p>
+                    <p>
+                        It is a web page designed to allow the monitoring and management of projects in the engineering area in a company.
+                    </p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/engi.png" class="img-fluid">
+                <div class="col-12 col-sm-3 col-md-4 align-self-center d-flex justify-content-center">
+                    <img src="img/engi.png " height="50" width="50" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -64,160 +66,174 @@
         </div>
 
         <div class="row row-content">
-           <div class="col-12">
-              <h3>Location Information</h3>
-           </div>
-            <div class="col-12 col-sm-4 offset-sm-1">
-                   <h5>Our Address</h5>
-                    <address style="font-size: 100%">
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
-		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
-		              <i class="fa fa-envelope"></i>:
-                        <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
-            </div>
-            <div class="col-12 col-sm-6 offset-sm-1">
-                <h5>Map of our Location</h5>
-            </div>
-            <div class="col-12 col-sm-11 offset-sm-1">
-                <div class="btn-group" role="group">
-                    <a role="button" class="btn btn-primary" href="tel:+85212345678"><i class="fa fa-phone"></i> Call</a>
-                    <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
-                    <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row row-content">
-           <div class="col-12">
-              <h3>Send us your Feedback</h3>
-           </div>
-            <div class="col-12 col-md-9">
-                <form>
-                    <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control"
-                            id="firstname" name="firstname" 
-                            placeholder="First Name">
-                        </div>
-                    </div>  
-                
-                    <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control"
-                            id="lastname" name="lastname" 
-                            placeholder="Last Name">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
-                        <div class="col-5 col-md-3">
-                            <input type="tel" class="form-control"
-                            id="areacode" name="areacode" 
-                            placeholder="Area Code">
-                        </div>
-                        <div class="col-7 col-md-7">
-                            <input type="tel" class="form-control"
-                            id="telnum" name="telnum" 
-                            placeholder="Tel. Number">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
-                        <div class="col-md-10">
-                            <input type="email" class="form-control"
-                            id="emailid" name="emailid" 
-                            placeholder="Email">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-md-6 offset-md-2">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input"
-                                    name="approve" id="approve" value=""> 
-                                <label class="form-check-label" for="appove">
-                                    <strong>May we contact you?</strong>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 offset-md-1">
-                            <select class="form-control">
-                                <option>Tel.</option>
-                                <option>Email</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group row">
-                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
-                        <div class="col-md-10">
-                            <textarea class="form-control"
-                            id="feedback" name="feedback" 
-                            rows="12"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div clas="offset-md-2 col-md-10">
-                            <button type="submit" class="btn btn-primary">
-                                Send Feedback
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-             <div class="col-12 col-md">
-            </div>
-       </div>
-
-
-
-       <div class="row row-content">
-        <div class="col-12 col-sm-9">
-            <h2>Facts &amp; Figures</h2>
+        <div class="col-12 col-sm-12">
+            <h2>List Projects</h2>
             <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead class="thead-dark">
+                <table class="table table-bordered">
+                    <thead class="table-success">
                         <tr>
-                            <th>&nbsp;</th>
-                            <th>2013</th>
-                            <th>2014</th>
-                            <th>2015</th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Engineer</th>
+                            <th>Technology</th>
+                            <th>Amount</th>
+                            <th>Initial Meeting</th>
+
+                            <th>Basic Eng. Commitment</th>
+                            <th>Basic Eng. Real Commitment</th>
+                            <th>Basic Eng. Commit. Comments</th>
+
+                            <th>Basic Eng. Approval</th>
+                            <th>Basic Eng. Real Approval</th>
+                            <th>Basic Eng. Appro. Comments</th>
+
+                            <th>Detail Eng. Commitment</th>
+                            <th>Detail Eng. Real Commitment</th>
+                            <th>Detail Eng. Commit. Comments</th>
+
+                            <th>Detail Eng. Approval</th>
+                            <th>Detail Eng. Real Approval</th>
+                            <th>Detail Eng. Appro. Comments</th>
+
+                            <th>Production Eng. Commitment</th>
+                            <th>Production Eng. Real Commitment</th>
+                            <th>Production Eng. Commit. Comments</th>
+
+                            <th>Factory Eng. Commitment</th>
+                            <th>Factory Eng. Real Commitment</th>
+                            <th>Factory Eng. Commit. Comments</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th>Employees</th>
-                            <td>15</td>
-                            <td>30</td>
-                            <td>40</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
                         </tr>
                         <tr>
-                            <th>Guests Served</th>
-                            <td>15000</td>
-                            <td>45000</td>
-                            <td>100,000</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>                        
                         </tr>
                         <tr>
-                            <th>Special Events</th>
-                            <td>3</td>
-                            <td>20</td>
-                            <td>45</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
                         </tr>
                         <tr>
-                            <th>Annual Turnover</th>
-                            <td>$251,325</td>
-                            <td>$1,250,375</td>
-                            <td>~$3,000,000</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
                         </tr>
                     </tbody>
                 </table>

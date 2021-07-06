@@ -301,7 +301,7 @@
                         <div class="form-group row">
                             <label for="projectname" class="col-sm-12 col-md-3 col-form-label font-weight-bold">Project Name</label>
                             <div class="col-md-7">
-                                <textarea class="form-control"
+                                <input type="text" class="form-control"
                                 id="projectname" name="projectname" 
                                 placeholder="Project Name">
                             </div>
@@ -314,7 +314,7 @@
                             <div class="col-md-7">
                                 <textarea class="form-control"
                                 id="cobecommitment" name="cobecommitment" 
-                                placeholder="Commitment">
+                                rows="3"></textarea>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -322,7 +322,7 @@
                             <div class="col-md-7">
                                 <textarea class="form-control"
                                 id="cobeapproval" name="cobeapproval" 
-                                placeholder="Approval">
+                                rows="3"></textarea>
                             </div>
                         </div>
                         
@@ -334,7 +334,7 @@
                             <div class="col-md-7">
                                 <textarea class="form-control"
                                 id="codecommitment" name="codecommitment" 
-                                placeholder="Commitment">
+                                rows="3"></textarea>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -342,7 +342,7 @@
                             <div class="col-md-7">
                                 <textarea class="form-control"
                                 id="codeapproval" name="codeapproval" 
-                                placeholder="Approval">
+                                rows="3"></textarea>
                             </div>
                         </div>
 
@@ -354,7 +354,7 @@
                             <div class="col-md-7">
                                 <textarea class="form-control"
                                 id="coprocommitment" name="coprocommitment" 
-                                placeholder="Commitment">
+                                rows="3"></textarea>
                             </div>
                         </div>
 
@@ -366,7 +366,7 @@
                             <div class="col-md-7">
                                 <textarea class="form-control"
                                 id="cofacommitment" name="cofacommitment" 
-                                placeholder="Commitment">
+                                rows="3"></textarea>
                             </div>
                         </div>
 
@@ -383,12 +383,14 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-7">
+                <div class="col-12 col-sm-6 row align-items-center">
                     <h1>Engineering Management</h1>
-                    <p></p>
+                    <p>
+                        It is a web page designed to allow the monitoring and management of projects in the engineering area in a company.
+                    </p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/engi.png" class="img-fluid">
+                <div class="col-12 col-sm-3 col-md-4 align-self-center d-flex justify-content-center">
+                    <img src="img/engi.png " height="50" width="50" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -402,34 +404,41 @@
             </ol>
         </div>
 
-        <div class="col-12 col-sm-12">
-            <div class="card">
-                <h3 class="card-header">Main Menu</h3>
-                <div class="card-body">
-                    <dl class="row">
-                        <div class="col-6 col-sm-6">
-                            <button class="btn" id="generalButton">
-                                <a>General Information</a>
-                            </button> 
-                        </div>
-                        <div class="col-6 col-sm-6">
-                            <button class="btn" id="baselineButton">
-                                <a>Base Line</a>
-                            </button> 
-                        </div>
-                    </dl>
-                    <dl class="row">
-                        <div class="col-6 col-sm-6">
-                            <button class="btn" id="updateButton">
-                                <a>Update Dates</a>
-                            </button> 
-                        </div>
-                        <div class="col-6 col-sm-6">
-                            <button class="btn" id="commentsButton">
-                                <a>Comments</a>
-                            </button> 
-                        </div>
-                    </dl>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-12 ">
+                <div class="card">
+                    <h3 class="card-header">Main Menu</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <div class="col-5 col-sm-5">
+                                <button class="btn" id="generalButton">
+                                    <a>General Information</a>
+                                </button> 
+                            </div>
+                            <div class="col-5 col-sm-5">
+                                <button class="btn" id="baselineButton">
+                                    <a>Base Line</a>
+                                </button> 
+                            </div>
+                        </dl>
+                        <dl class="row">
+                            <div class="col-5 col-sm-5">
+                                <button class="btn" id="updateButton">
+                                    <a>Update Dates</a>
+                                </button> 
+                            </div>
+                            <div class="col-5 col-sm-5">
+                                <button class="btn" id="commentsButton">
+                                    <a>Comments</a>
+                                </button> 
+                            </div>
+                            <div class="col-2 col-sm-2 justify-content-center row align-items-center">
+                                <button class="btn" id="seetableButton">
+                                    <a href="./table.html"><span class="fa fa-eye fa-lg"></span>See Table</a>
+                                </button>             
+                            </div>
+                        </dl>
+                    </div>
                 </div>
             </div>
         </div>
